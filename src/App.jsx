@@ -1,6 +1,6 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import Homs from './components/Homs'
+import Home from './components/Home'
 import Gretting from './components/Gretting'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -12,11 +12,11 @@ function App() {
     <>
      <NavBar sticky="top" />
      <Routes>
-      <Route path='/' element={<Homs />}>
-        <Route path='/#greeting' id='greeting' element={<Gretting />} />
-        <Route path='/#about' id='about' element={<About />} />
-        <Route path='/#projects' id='projects' element={<Projects />} />
-        <Route path='/#contact' id='contact' element={<Contact />} />
+      <Route path='/' element={<Home />}>
+        <Route path='/greeting' element={<Gretting />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/contact' element={<Contact />} />
       </Route>
      </Routes>
     </>

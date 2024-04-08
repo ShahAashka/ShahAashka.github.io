@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav className={styles.navMainContainer}>
       <div className={styles.navInner}>
         <HashLink to='#' className='logoNavbar'>
-          <img alt="Site Logo" width={36} height={36} src='../../public/android-chrome-512x512.png'/>
+          <img alt="Site Logo" width={36} height={36} src='/android-chrome-512x512.png'/>
         </HashLink>
         <ul className={styles.listOfNavs}>
             <CustomLink to='#about' className={styles.listItemStyle}>About</CustomLink>

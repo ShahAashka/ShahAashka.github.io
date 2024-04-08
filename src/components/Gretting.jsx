@@ -2,7 +2,7 @@ import React from 'react'
 
 const Gretting = () => {
   return (
-    <div style={{height: '1500px'}}>Gretting</div>
+    <div id='greeting' style={{height: '1000px', backgroundColor:'beige'}}>Gretting</div>
   )
 }
 

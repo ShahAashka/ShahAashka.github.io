@@ -4,7 +4,7 @@ import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
 
-const Homs = () => {
+const Home = () => {
   return (
     <>
       <Gretting />
@@ -15,4 +15,4 @@ const Homs = () => {
   )
 }
 
-export default Homs
+export default Home

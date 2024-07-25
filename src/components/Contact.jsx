@@ -1,8 +1,17 @@
 import React from 'react'
+import styles from '../styles/Contact.module.css'
+import ContactImage from '../assets/contact.svg'
 
 const Contact = () => {
   return (
-    <div id='contact' style={{height: '1000px', backgroundColor:'aqua'}}>Contact</div>
+    <div id='contact' className={styles.mainContact}>
+     <div className={styles.contactInnerSection}>
+        <div className={styles.contactTxt}>Contact</div>
+        <div className={styles.contactImgContainer}>
+          <img className={styles.contactImg} src={ContactImage} loading="lazy" />
+        </div>
+      </div>
+    </div>
   )
 }
 

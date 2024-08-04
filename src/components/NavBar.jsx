@@ -5,15 +5,15 @@ import styles from '../styles/NavBar.module.css';
 
 const NavBar = () => {
   return (
-    <nav className={styles.navMainContainer}>
-      <div className={styles.navInner}>
-        <HashLink to='#' className='logoNavbar'>
+    <nav className="h-header sticky top-0 z-50 flex bg-primary-300 border-b-2 border-primary-100 border-solid">
+      <div className="container flex w-full justify-between items-center flex-row py-4">
+        <HashLink to='#' className="items-center justify-start">
           <img alt="Site Logo" width={36} height={36} src='/android-chrome-512x512.png'/>
         </HashLink>
-        <ul className={styles.listOfNavs}>
-            <CustomLink to='#about' className={styles.listItemStyle}>About</CustomLink>
-            <CustomLink to='#projects' className={styles.listItemStyle}>Projects</CustomLink>
-            <CustomLink to='#contact' className={styles.listItemStyle}>Contact</CustomLink>
+        <ul className="hidden flex flex-row gap-2 justify-between items-center list-none xs:flex sm:gap-6">
+            <CustomLink to='#about' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">About</CustomLink>
+            <CustomLink to='#projects' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Projects</CustomLink>
+            <CustomLink to='#contact' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Contact</CustomLink>
         </ul>
         <button className={styles.resumeButton}>Resume</button>
       </div>

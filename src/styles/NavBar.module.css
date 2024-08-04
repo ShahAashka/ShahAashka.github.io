@@ -6,7 +6,7 @@
     width: 100%;
     background-color: #10162F;
     border-bottom: 2px #FFD300 solid;
-}
+}   
 .navInner {
     display: flex;
     flex: 1;
@@ -38,6 +38,7 @@
 }
 .resumeButton {
     padding: 10px 16px 10px 16px;
+    background-color: #ffffff;
     border-radius: 6px;
     font-weight: 600;
     font-size: small;

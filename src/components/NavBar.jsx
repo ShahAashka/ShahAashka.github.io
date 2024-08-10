@@ -1,7 +1,5 @@
 import CustomLink from '../common/CustomLink';
 import { HashLink } from 'react-router-hash-link'
-import styles from '../styles/NavBar.module.css';
-
 
 const NavBar = () => {
   return (
@@ -15,7 +13,7 @@ const NavBar = () => {
             <CustomLink to='#projects' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Projects</CustomLink>
             <CustomLink to='#contact' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Contact</CustomLink>
         </ul>
-        <button className={styles.resumeButton}>Resume</button>
+        <button className="py-1.5 px-4 bg-primary-500 rounded-md font-medium text-sm border-0 hover:border hover:border-black hover:border-solid hover:shadow-[-4px_4px_0px_0px_#ffd300]">Resume</button>
       </div>
     </nav>
   )

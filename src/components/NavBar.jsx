@@ -1,5 +1,6 @@
 import CustomLink from '../common/CustomLink';
 import { HashLink } from 'react-router-hash-link'
+import { GithubIcon, LinkedinIcon } from '../icons';
 
 const NavBar = () => {
   return (
@@ -10,10 +11,17 @@ const NavBar = () => {
         </HashLink>
         <ul className="hidden flex flex-row gap-2 justify-between items-center list-none xs:flex sm:gap-6">
             <CustomLink to='#about' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">About</CustomLink>
-            <CustomLink to='#projects' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Projects</CustomLink>
+            {/* <CustomLink to='#projects' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Projects</CustomLink> */}
             <CustomLink to='#contact' className="text-primary-500 font-medium text-lg decoration-none hover:text-primary-100 hover:underline hover:decoration-solid">Contact</CustomLink>
         </ul>
-        <button className="py-1.5 px-4 bg-primary-500 rounded-md font-medium text-sm border-0 hover:border hover:border-black hover:border-solid hover:shadow-[-4px_4px_0px_0px_#ffd300]">Resume</button>
+        <ul className='flex flex-row gap-2 items-center'>
+          <CustomLink to={"https://github.com/ShahAashka"}>
+            <GithubIcon className="h-8 w-8 fill-white transition hover:fill-primary-100" />
+          </CustomLink>
+          <CustomLink to={"https://www.linkedin.com/in/aashka-acharya-83697214b/"}>
+            <LinkedinIcon className="h-8 w-8 fill-white transition hover:fill-primary-100" />
+          </CustomLink>
+        </ul>
       </div>
     </nav>
   )

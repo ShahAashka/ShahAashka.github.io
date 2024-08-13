@@ -31,7 +31,7 @@ const Home = () => {
     <>
       <Gretting greetings={greetings}/>
       <About about={about}/>
-      <Projects />
+      {/* <Projects /> */}
       <Contact contact={contact}/>
     </>
   )

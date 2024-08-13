@@ -3,7 +3,7 @@ export default {
         greeting: "Hello, my name is",
         name: "Aashka Acharya",
         title: "A passionate Software Developer",
-        paraOne: "I'm a Software Developer based in Canada. I specialize in creating UIs that are not only visually stunning but also perform smoothly across different browsers and devices.",
+        paraOne: "I'm a Software Developer based in Canada. I specialize in developing User Experiences that are not only visually stunning but also perform smoothly across different browsers and devices.",
         paraTwo: "If you scroll down a bit, you can check out some of my recent projects and see what I've been up to. I'm focused towards developing websites that are intuitive and easy to use while delivering real value to our customers."
     },
     aboutSection: {
@@ -12,7 +12,10 @@ export default {
         paraTwo: "I started by learning the fundamentals of JavaScript, and while it was challenging, I took the time to ensure a strong understanding of these languages. This foundation has allowed me to quickly pick up more advanced frameworks and libraries, such as ReactJS, React Native and TailwindCSS.",
         paraThree: "Along the way, I have developed numerous projects, and my goal is to continue to hone my skills and become an even better developer. I am excited to see where this journey takes me, as there is always so much to explore in the ever-changing world of web development."
     },
-    portfolioSection: {},
+    portfolioSection: {
+        title: "Some Projects I've Built",
+        projects: []
+    },
     contactSection: {
         title: "Contact Me",
         paraOne: "If you have any inquiries or would like to discuss a potential project, feel free to reach out to me through the contact email provided below. I'm always open to collaboration and love working with new clients.",
